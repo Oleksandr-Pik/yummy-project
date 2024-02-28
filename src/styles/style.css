@@ -1,0 +1,185 @@
+:root {
+  --c-brown: #774E2E;
+  --c-orange: #F37F34;
+  --c-bg: #FFF9EA
+}
+
+@font-face {
+  font-family: 'Montserat';
+  src: url('../dist/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserat', 'sans serif';
+  color: var(--c-brown);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 72px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* HEADER ------------------ */
+
+.header {
+  padding-top: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 79px;
+  height: 79px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  column-gap: 50px;
+}
+
+.menu-link {
+  color: var(--c-brown);
+  text-decoration: none;
+}
+
+/* GREETINGS ----------------- */
+
+.section-greetings {
+  background-image: url(../dist/images/greetings-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-top: 160px;
+  padding-bottom: 210px;
+  /* height: 596px; */
+}
+
+.greetings {
+  width: 50%;
+}
+
+.greetings-title {
+  font-size: 110px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  /* margin-top: 160px; */
+}
+
+h1 span,
+h2 span {
+  color: var(--c-orange);
+}
+
+.greetings a {
+  text-decoration: none;
+  background-color: var(--c-brown);
+  color: #fff;
+  padding: 22px;
+  display: inline-flex;
+  margin-top: 50px;
+  /* margin-bottom: 210px; */
+}
+
+/* SWEETS ------------- */
+
+section:nth-child(2) {
+  background-color: var(--c-bg);
+  padding: 150px 0;
+}
+
+.sweets h2 {
+margin-bottom: 70px;;
+}
+
+.items-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  max-width: 330px;
+  background-color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.item img {
+  width: 100%;
+  /* margin-bottom: 30px; */
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* ADVICE ------- */
+
+.advice {
+  padding-bottom: 150px;
+  padding-top: 150px;
+  background-image: url(../dist/images/accent-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.list-container {
+  width: 50%;
+  padding-top: 50px;
+}
+
+.list-container h2 {
+  padding-bottom: 30px;
+}
+
+.list-container p {
+  padding-bottom: 60px;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+/* FOOTER ---------- */
+
+footer {
+  padding: 50px 15px;
+  background-color: var(--c-brown);
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  font-size: 36px;
+  text-align: right;
+}
